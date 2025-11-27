@@ -1,5 +1,24 @@
+#particles-js{
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    /* z-index: 99 !important; */
+}
+
+.particles-js-canvas-el{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    /* width: 100% !important;
+    height: 100% !important; */
+    z-index: 1 !important;
+}
 .ff-jost {
     font-family: "Jost", sans-serif;
+}
+.ff-tangerine{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
 }
 .t-color-1 {
     color: white;
@@ -10,19 +29,17 @@
 .bg-color-1 {
     background-color: black;
 }
-/* .bg-gradient-1{
-    background: rgb(0,0,0) !important;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,0,0,0.9) 48%, rgba(255,255,255,1) 100%) !important;
-}
-.bg-gradient-2{
-    background: rgb(0,0,0) !important;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(255,255,255,1) 100%) !important;
-} */
 .pt-90{
     padding-top: 90px;
 }
+.py-90{
+    padding: 90px 0px;
+}
 .w-80{
     width: 80px;
+}
+.logo-w{
+    width: 50% !important;
 }
 .btn-1 {
     background-color: #F7F7F7;
@@ -35,8 +52,20 @@
     padding: 6px 15px;
     transform: scale(1.15);
 }
-.banner {
-    height: 100vh;
+.underline{
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(white,white);
+    background-size: 0 2px,1px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: all .5s ease-in;
+}
+.underline:hover{
+    background-size: 100% 2px,auto;
+}
+.banner{
+    height: 750px;
 }
 .skills{
     background-color: white;
@@ -47,9 +76,31 @@
 }
 .projects{
     background-color: white;
-    
     transition: all 0.5s;
 }
 .projects:hover{
     transform: scale(1.1);
+}
+.contect{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-image: url('../imges/IMG_9566.jpeg'); */
 }
